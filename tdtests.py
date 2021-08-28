@@ -1,8 +1,4 @@
 # Name:         Sameera Balijepalli
-# Course:       CPE 202
-# Instructor:   Daniel Kauffman
-# Assignment:   Tile Driver
-# Term:         Spring 2021
 
 import unittest
 
