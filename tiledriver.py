@@ -1,8 +1,4 @@
 # Name:         Sameera Balijepalli
-# Course:       CPE 202
-# Instructor:   Daniel Kauffman
-# Assignment:   Tile Driver
-# Term:         Spring 2021
 
 # import random
 from typing import List, Tuple
@@ -222,15 +218,15 @@ def solve_puzzle(tiles: Tuple[int, ...]) -> str:
     return "this puzzle is impossible to solve"
 
 
-# def main() -> None:
-#     random.seed(int(input("Random Seed: ")))
-#     tiles = list(range(int(input("Puzzle Width: ")) ** 2))  # use 2 or 3
-#     random.shuffle(tiles)
-#     print("Tiles:", "[", " ".join(str(t) for t in tiles), "]")
-#     if not is_solvable(tuple(tiles)):
-#         print("Unsolvable")
-#     else:
-#         print("Solution:", solve_puzzle(tuple(tiles)))
+def main() -> None:
+    random.seed(int(input("Random Seed: ")))
+    tiles = list(range(int(input("Puzzle Width: ")) ** 2))  # use 2 or 3
+    random.shuffle(tiles)
+    print("Tiles:", "[", " ".join(str(t) for t in tiles), "]")
+    if not is_solvable(tuple(tiles)):
+        print("Unsolvable")
+    else:
+        print("Solution:", solve_puzzle(tuple(tiles)))
 
 
 if __name__ == "__main__":
